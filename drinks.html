@@ -1,0 +1,32 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Drinks{% endblock %}
+
+{% block content %}
+<div class="container justify-content-center">
+    <form action ="{{ url_for('resultsD')}}" method = "POST">
+        <div class="form-group row">
+            <h3>Bottled Drink Recommendations</h3>
+        </div>  
+            
+        <div class="form-group row">    
+            Name<br>
+            <input type="text" name="nm"/><br>
+        </div>
+
+        <div class="form-group row">
+            Choice 1<br>
+            <input type="text" name="one"/><br>
+        </div>
+
+        <div class="form-group row">
+            Choice 2<br>
+            <input class="text text-blue" name="two"/><br>
+        </div>
+
+        <div class="form-group row">
+            <input class="btn btn-success" type="submit" value="Submit"/>
+        </div>
+    </form>
+</div>
+{% endblock %}

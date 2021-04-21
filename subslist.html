@@ -1,0 +1,22 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content%}
+    <table class="table table-striped table-dark">
+        <thead class="thead-dark">
+            <tr>
+                <th>Name</th>
+                <th>Choice 1</th>
+                <th>Choice 2</th>
+            </tr>
+        </thead>
+        
+        {% for row in rows %}
+        <tr>
+            <td>{{ row["name"] }}</td>
+            <td>{{ row["choice1"] }}</td>
+            <td>{{ row["choice2"] }}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+{% endblock %}

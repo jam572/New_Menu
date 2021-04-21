@@ -1,0 +1,33 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}New Menu Items{% endblock %}
+
+{% block content %}
+<div class="container justify-content-center">
+
+    <form action ="http://localhost:5000/menu/pizza" method = "POST">
+        <div class="form-group row">
+            <input class="btn btn-success" type="submit" value="Pizza"/>
+        </div>
+    </form>
+
+    <form action ="http://localhost:5000/menu/subs" method = "POST">
+        <div class="form-group row">
+            <input class="btn btn-success" type="submit" value="Subs"/>
+        </div>
+    </form>
+
+    <form action ="http://localhost:5000/menu/apps" method = "POST">
+        <div class="form-group row">
+            <input class="btn btn-success" type="submit" value="Appetizers"/>
+        </div>
+    </form>
+
+    <form action ="http://localhost:5000/menu/drinks" method = "POST">
+        <div class="form-group row">
+            <input class="btn btn-success" type="submit" value="Bottled Drinks"/>
+        </div>
+    </form>
+
+</div>
+{% endblock %}
